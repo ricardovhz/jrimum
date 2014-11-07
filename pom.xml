@@ -6,9 +6,24 @@
 	<artifactId>bopepo</artifactId>
 	<packaging>jar</packaging>
 	<name>Projeto Bopepo</name>
-	<version>0.2.3-SNAPSHOT</version>
+	<version>0.2.4-SNAPSHOT</version>
 	<description>Projeto open source de componentes de software para o domínio de negócios do Brasil.</description>
 	<url>http://www.jrimum.org/bopepo</url>
+
+	<distributionManagement>
+		<repository>
+			<id>wcj-releases</id>
+			<name>WCJ Releases</name>
+			<url>http://dev.wba.com.br:8081/nexus/content/repositories/releases/
+            </url>
+		</repository>
+		<snapshotRepository>
+			<id>wcj-snapshots</id>
+			<name>WCJ Snapshots</name>
+			<url>http://dev.wba.com.br:8081/nexus/content/repositories/snapshots/
+            </url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<licenses>
 		<license>
@@ -140,7 +155,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+<!--			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.7</version>
@@ -159,7 +174,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 
@@ -201,7 +216,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.8.1</version>
+			<version>4.10</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

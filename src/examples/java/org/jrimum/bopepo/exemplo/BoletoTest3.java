@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
 
 import org.jrimum.bopepo.BancosSuportados;
 import org.jrimum.bopepo.Boleto;
@@ -39,7 +39,7 @@ import org.jrimum.utilix.text.Filler;
  * 
  * @version 0.2
  */
-public class BoletoTest3  extends TestCase {
+public class BoletoTest3 { // extends TestCase {
 	
 	public void testGeraBoleto() {
 
